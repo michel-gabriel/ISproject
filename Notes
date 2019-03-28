@@ -14,3 +14,10 @@ _cfduid = a cookie that says you passed captcha or some test and do not need to 
 _ga     = Used to distinguish users. expiration 2 years
 _gid    = Used to distinguish users. expiration 24 hrs
 
+Cookies are handled entirely by the request header in HTTP header fields, cookies in the client side are encoded in the 'Cookie' 
+and 'Set-Cookie' response header and in the server side are encoded in the 'Cookie' request header 
+
+example of client request
+  GET /index.html HTTP/1.1
+  Host: www.example.com
+
