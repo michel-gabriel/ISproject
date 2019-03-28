@@ -7,3 +7,10 @@ https://www.youtube.com/watch?v=VsWKU3NNd7Y **DNS spoof / clone webpage/ webserv
 https://serveo.net/#manual **webserver/ portforwarding allows localhost site to be seen by internet
 
 https://m.youtube.com/watch?v=FC7SJXjbgyc **arp iptable fwd host find ssl strip
+
+COOKIES (BITTREX in chrome)
+
+_cfduid = a cookie that says you passed captcha or some test and do not need to do it again. NO identity associated with this cookie. 
+_ga     = Used to distinguish users. expiration 2 years
+_gid    = Used to distinguish users. expiration 24 hrs
+
