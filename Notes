@@ -21,3 +21,73 @@ example of client request
   GET /index.html HTTP/1.1
   Host: www.example.com
 
+
+/////////////FACEBOOK///////////////https://www.neoanalysis.eu/_ITS/ITS2012/395701387118444_1090193793.pdf
+COOKIES: 
+
+*SESSION COOKIE = CLEARS WHEN BROSWER EXITS (NOT SESSION ID)
+
+datr = identify the web browser being used to connect to Facebook
+  independent of the logged in user. This cookie plays a key role in Facebook’s security and site
+  integrity features
+ 
+wd =  stores the browser window dimensions and is used by Facebook to optimise the
+  rendering of the page
+  
+presence = The presence cookie is used to contain the user’s chat state. For example, which chat tabs are
+  open.
+  This cookie is a session cookie.
+  
+locale = This cookie contains the display locale of the last logged in user on this browser. This cookie
+  appears to only be set after the user logs out.
+  The locale cookie has a lifetime of one week.
+  
+ lsd = The lsd cookie contains a random value that is set when a Facebook user logs out in order to
+  prevent cross-site request forgery (CSRF) attacks. The cross-site request forgery attack is a technique that involves misuse of user credentials from
+  one site (in this case Facebook) to perform unauthorised actions on the user’s account when a
+  user visits a web site containing specifically crafted malicious code.
+  The lsd cookie is a session cookie.
+
+c_user = The c_user cookie contains the user ID of the currently logged in user.
+  The lifetime of this cookie is dependent on the status of the ‘keep me logged in’ checkbox. If the
+  ‘keep me logged in’ checkbox is set, the cookie expires after 30 days of inactivity. If the ‘keep me
+  logged in’ checkbox is not set, the cookie is a session cookie and will therefore be cleared when
+  the browser exits.
+ 
+ xs = This cookie contains multiple pieces of information, separated by colon (%3A). The first value is an up
+  to two-digit number representing the session number. The second portion of the value is a session secret.
+  The third, optional component is a ‘secure’ flag for if the user has enabled the secure
+  browsing feature.
+  The lifetime of this cookie is dependent on the status of the ‘keep me logged in’ checkbox. If the
+  ‘keep me logged in’ checkbox is set, the cookie expires after 30 days of inactivity. If the ‘keep me
+  logged in’ checkbox is not set, the cookie is a session cookie.
+ 
+ lu = The lu cookie is used to manage how the login page is presented to the user. Several pieces of
+  information are encoded within the lu cookie, as described here.
+  The “keep me logged in” checkbox on the Facebook login page is used to determine whether or
+  not the authentication cookies delivered to the user when they log in will be retained when the
+  user quits their browser. If the “keep me logged in” checkbox is ticked, then when the user logs in,
+  the authentication cookies will be persistent (retained after the browser exits). If the “keep me
+  logged in” checkbox is not ticked, then the authentication cookies will be session cookies (cleared
+  when the browser exits).
+  The user can explicitly check or uncheck the “keep me logged in” box. The lu cookie records
+  whether the user has performed such an explicit action.
+  If the user has not explicitly either checked or unchecked the “keep me logged in” box, then the
+  default mode of operation is to automatically check the “keep me logged in box” if the same user
+  has logged in from the same computer three times in a row without logging out. A user explicitly
+  checking or unchecking the “keep me logged in” box always overrides this feature.
+  In order to implement this functionality, the lu cookie contains a counter which is incremented if
+  the user logging in is the same as the previous user that logged in from this web browser, and if
+  the previous user did not explicitly log out. To be able to determine whether the user logging in
+  is the same as the previous user that logged in, the lu cookie contains the user ID of the previously
+  logged in user. The previously logged in user component of the lu cookie is set to zero if the user
+  explicitly logs out.
+  The user ID component of the lu cookie is also used to pre-populate the email address field of the
+  login form if the user did not previously explicitly log out.
+  To summarise, the components of the lu cookie are:
+   The user id of the previously logged in user, or zero if the user explicitly logs out.
+   A counter containing the number of times in a row that the same user has logged in from
+    from this browser and has not explicitly logged out.
+   A flag used to indicate whether the user has explicitly either checked or unchecked the
+    “keep me logged in” box.
+  The lifetime of the lu cookie is two years.
