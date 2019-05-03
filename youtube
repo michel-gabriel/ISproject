@@ -4,3 +4,20 @@ This is my link to youtube video!
 https://youtu.be/GolRsCKiKxA
 
 I also included a description as part of the youtube video
+------------------------------------------------------------------
+PART 2 RESEARCH: signed in 3 days later and compared cookies in POST request for my tweet.
+However, im am signing in for first time on new device and running mitmproxy on this new device.
+
+personalization_id cookie is not stable/persistent
+authenticity_token cookie is not stable/persistent
+auth_token is not stable
+ct0, _ga, _gid are not stable
+twitter_session is not stable however very similar
+guest_id is not stable
+
+External_referrer cookie is stable
+dnt , ads_prefs are stable
+twid is stable
+
+https://developer.twitter.com/en/docs/tweets/post-and-engage/api-reference/post-statuses-update
+https://reqbin.com/ # allows me to send directly to server to test tweet. 
