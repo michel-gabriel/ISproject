@@ -1,0 +1,61 @@
+import requests
+#######################################
+#_twitter_sess='BAh7CiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCCVz6W9qAToMY3NyZl9p%250AZCIlZGJkODU2OTU0ODIwMDMwODAwYzExZTBjMDkwYWU1NjE6B2lkIiU5NmM3%250AMWM0OGMyZWIxNGIwOGRlZjAzZGM5MzBkMTM5NToJdXNlcmwrCQBglD6JJIcP--a400f85dc71893b4da477ff5cf6bfbf41f1f2a28'
+#twid="u=1118903204303888384"
+#auth_token="32e577c9f03e3c64930bc77fd06a6e33b5a530da"
+#authenticity_token=166b192ee4dfe3ceb9c77fb77d181c8c80272ee0&batch_mode=off&is_permalink_page=false&place_id=&status=test+FIND+ME%0A&tagged_users=
+#
+#######################################
+
+cookies = {}
+
+post_url = 'https://twitter.com/i/tweet/create'
+
+
+auth_cookies = {
+    'personalization_id' : 'v1_6i2JGPmvAe/b31uTQ4nzWg=='
+    '_twitter_sess' : 'BAh7CiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCCVz6W9qAToMY3NyZl9p%250AZCIlZGJkODU2OTU0ODIwMDMwODAwYzExZTBjMDkwYWU1NjE6B2lkIiU5NmM3%250AMWM0OGMyZWIxNGIwOGRlZjAzZGM5MzBkMTM5NToJdXNlcmwrCQBglD6JJIcP--a400f85dc71893b4da477ff5cf6bfbf41f1f2a28'
+    'authenticity_token' : '166b192ee4dfe3ceb9c77fb77d181c8c80272ee0&batch_mode=off&is_permalink_page=false&place_id=&status=test+FIND+ME%0A&tagged_users='
+    'guest_id' : 'v1%3A155665573149256300'
+    'external_referer' : 'padhuUp37zjgzgv1mFWxJ12Ozwit7owX|0|8e8t2xd8A2w%3D'
+   	'ct0' : '634ad28d5c84f6129b4befcb58fd31ce'
+	'_ga' : 'GA1.2.313065884.1556655734'
+	'_gid' : 'GA1.2.350539955.1556655734'
+	'dnt' : '1'
+	'ads_prefs' : 'HBISAAA='
+	'kdt' : 'Zuj4mc0uqAxoNnEMIjECnsyNnZJTuVkY2oARcg9T'
+	'remember_checked_on' : '1'
+}
+
+auth_data = {
+    'grant_type': 'client_credentials'
+}
+
+auth_resp = requests.post(post_url, cookies=auth_cookies, data=auth_data)
+
+personalization_id="v1_6i2JGPmvAe/b31uTQ4nzWg=="
+
+#quotes arent on these following ones in actual query
+_twitter_sess='BAh7CiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCCVz6W9qAToMY3NyZl9p%250AZCIlZGJkODU2OTU0ODIwMDMwODAwYzExZTBjMDkwYWU1NjE6B2lkIiU5NmM3%250AMWM0OGMyZWIxNGIwOGRlZjAzZGM5MzBkMTM5NToJdXNlcmwrCQBglD6JJIcP--a400f85dc71893b4da477ff5cf6bfbf41f1f2a28'
+
+authenticity_token="166b192ee4dfe3ceb9c77fb77d181c8c80272ee0&batch_mode=off&is_permalink_page=false&place_id=&status=test+FIND+ME%0A&tagged_users="
+
+guest_id="v1%3A155665573149256300"
+
+external_referer="padhuUp37zjgzgv1mFWxJ12Ozwit7owX|0|8e8t2xd8A2w%3D"
+
+ct0="634ad28d5c84f6129b4befcb58fd31ce"
+_ga="GA1.2.313065884.1556655734"
+_gid="GA1.2.350539955.1556655734"
+dnt=1
+#this bottom one had quotes
+ads_prefs="HBISAAA="
+#this bottom one did not have quotes
+kdt="Zuj4mc0uqAxoNnEMIjECnsyNnZJTuVkY2oARcg9T"
+remember_checked_on=1
+#had quotes on bottom one
+twid="u=1118903204303888384"
+auth_token="32e577c9f03e3c64930bc77fd06a6e33b5a530da"
+csrf_same_site_set=1
+lang=en
+csrf_same_site=1
